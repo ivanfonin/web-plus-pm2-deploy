@@ -2,6 +2,6 @@
 
 Стартеркит проекта по автоматизации деплоя фронтенда и бэкенда при помощи pm2 (pm2 deploy)
 
-Фронтенд: [https://ivanfonin.nomoreparties.sbs](https://ivanfonin.nomoreparties.sbs/)  
-Бэкенд: [https://api.ivanfonin.nomoreparties.sbs](https://api.ivanfonin.nomoreparties.sbs/)  
+Фронтенд: [ivanfonin.nomoreparties.sbs](https://ivanfonin.nomoreparties.sbs/)  
+Бэкенд: [api.ivanfonin.nomoreparties.sbs](https://api.ivanfonin.nomoreparties.sbs/)  
 IP: `51.250.20.122`  
