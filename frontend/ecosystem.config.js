@@ -15,8 +15,7 @@ module.exports = {
       ref: DEPLOY_REF, 
       repo: 'https://github.com/ivanfonin/web-plus-pm2-deploy.git',
       path: DEPLOY_PATH,
-      // 'pre-deploy-local': `scp ./.env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
-      // 'pre-deploy': `echo "pre-deploy command runs"`,
+      'pre-deploy-local': `scp ./.env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
       'post-deploy': `cd ${DEPLOY_PATH}/source/frontend && npm i && npm run build && mv ./build/* ${DEPLOY_PATH}/mesto-frontend`,
     }
   }
