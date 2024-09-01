@@ -21,11 +21,7 @@ app.get('/crash-test', () => {
 });
 
 // Только для локальных тестов. Не используйте это в продакшене
-app.use(cors({
-  origin: 'https://ivanfonin.nomoreparties.sbs',
-  methods: 'GET,POST,PUT,PATCH,DELETE',
-  credentials: true,
-}));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
