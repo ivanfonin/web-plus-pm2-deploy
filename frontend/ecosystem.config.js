@@ -6,7 +6,7 @@ const {
 
 module.exports = {
   apps: [{
-    name: "frontend-app"
+    name: "mesto-frontend"
   }],
   deploy: {
     production: {
@@ -16,7 +16,7 @@ module.exports = {
       repo: 'https://github.com/ivanfonin/web-plus-pm2-deploy.git',
       path: DEPLOY_PATH,
       'pre-deploy-local': `scp ./.env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/source/frontend`,
-      'post-deploy': `cd ${DEPLOY_PATH}/source/frontend && pwd && source /home/${DEPLOY_USER}/.nvm/nvm.sh && npm i && npm run build && mv ./build/* ${DEPLOY_PATH}/../mesto-frontend`,
+      'post-deploy': `cd ${DEPLOY_PATH}/source/frontend && source /home/${DEPLOY_USER}/.nvm/nvm.sh && npm i && npm run build`,
     }
   }
 }
