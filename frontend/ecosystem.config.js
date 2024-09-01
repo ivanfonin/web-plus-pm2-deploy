@@ -1,5 +1,4 @@
 require('dotenv').config({ path: './.env.deploy' });
-const path = require('path');
 
 const {
   DEPLOY_USER, DEPLOY_HOST, DEPLOY_PATH, DEPLOY_REF = 'origin/main',
