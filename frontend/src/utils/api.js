@@ -139,7 +139,7 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('https://api.ivanfonin.nomorepartiesco.ru');
+  const api = new Api('https://api.ivanfonin.nomoreparties.sbs');
   
   export default api;
   
