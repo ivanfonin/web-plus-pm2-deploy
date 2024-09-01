@@ -7,7 +7,7 @@ const {
 module.exports = {
   apps: [{
     name: 'backend-app',
-    script: './dist/app.js',
+    script: `/home/${DEPLOY_USER}/mesto-backend/app.js`,
   }],
   deploy: {
     production: {
