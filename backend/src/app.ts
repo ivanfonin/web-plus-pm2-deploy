@@ -13,10 +13,17 @@ const { PORT = 3000 } = process.env;
 const app = express();
 mongoose.connect(DB_ADDRESS);
 
+// Crash Test
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 // Только для локальных тестов. Не используйте это в продакшене
 app.use(cors({
   origin: 'https://ivanfonin.nomoreparties.sbs',
-  methods: 'GET,POST,PUT,DELETE',
+  methods: 'GET,POST,PUT,PATCH,DELETE',
   credentials: true,
 }));
 app.use(express.json());
